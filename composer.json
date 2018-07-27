@@ -1,0 +1,29 @@
+{
+  "name": "melodika/melodika-wow.ru",
+  "description": "melodika-wow.ru rest backend",
+  "type": "project",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.2.0",
+    "yiisoft/yii2": "~2.0.15",
+    "vlucas/phpdotenv": "^2.5",
+    "firebase/php-jwt": "^5.0",
+    "yiisoft/yii2-redis": "^2.0",
+    "pheme/yii2-settings": "^0.6.0",
+    "mohorev/yii2-upload-behavior": "^0.2.0",
+    "yiisoft/yii2-imagine": "^2.1"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-faker": "^2.0",
+    "codeception/codeception": "2.4@dev",
+    "roave/security-advisories": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
