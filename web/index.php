@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$dotenv = new Dotenv\Dotenv(dirname(__DIR__, 2));
+$dotenv = new Dotenv\Dotenv(dirname(__DIR__));
 $dotenv->load();
 
 define('YII_ENV', getenv('APPLICATION_ENV') ?: 'prod');
