@@ -37,7 +37,7 @@ class LoginForm extends Model
      * @param string $attribute
      * @param array $params
      */
-    public function validatePassword(string $attribute, array $params): void
+    public function validatePassword(string $attribute, ?array $params): void
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();

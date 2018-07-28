@@ -56,7 +56,7 @@ class UserController extends Controller
      * @return LoginForm|array
      * @throws BadRequestHttpException
      */
-    public function actionLogin(): array
+    public function actionLogin()
     {
         $modelLogin = new LoginForm();
         if (!$modelLogin->load(Yii::$app->request->post(), '')) {
