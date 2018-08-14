@@ -23,7 +23,14 @@ return [
      */
     'components' => [
         // Работа с БД
-        'db' => require __DIR__ . '/db.local.php',
+        'db' => [
+            'class' => yii\db\Connection::class,
+            'dsn' => 'mysql:host=' . getenv('MYSQL_HOST') . ';dbname=' . getenv('MYSQL_DATABASE'),
+            'username' => getenv('MYSQL_USER'),
+            'password' => getenv('MYSQL_PASSWORD'),
+            'charset' => 'utf8',
+            'enableSchemaCache' => !YII_DEBUG,
+        ],
 
         // Кеширование
         'cache' => [
